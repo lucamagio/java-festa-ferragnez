@@ -13,12 +13,10 @@ public class checkGuest{
             
             if(listaInvitati[i].equals(anagraficaInvitato)){
                 System.out.println("Puoi accedere alla festa");
-                break;
-            } else{
-                System.out.println("Non puoi entrare, non sei nella lista invitati");
-                break;
+                return;
             }
         }
+        System.out.println("Non puoi entrare, non sei nella lista invitati");
 
     }
 }
